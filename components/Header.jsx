@@ -6,11 +6,11 @@ import logo from "@/images/logo.svg";
 
 const Header = () => {
   return (
-    <div className="w-full h-[120px] position-fixed">
+    <div className="w-full h-[120px] position-fixed ">
       <div className="flex justify-between items-center pt-8 px-8 xl:px-16 gap-12">
         <Image src={logo} alt="Logo Icon" width={50} height={50} />
         <div>
-          <ul className="flex items-center gap-2 md:gap-4 xl:gap-8 cursor-pointer">
+          <ul className="hidden md:flex items-center gap-2 md:gap-4 xl:gap-8 cursor-pointer">
             <li>Emotions</li>
             <li>Manifest</li>
             <li>Self-awareness test</li>

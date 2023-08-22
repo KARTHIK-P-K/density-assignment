@@ -13,8 +13,8 @@ import ahead4 from "@/images/ahead4.png";
 
 const Main = () => {
   return (
-    <div className="px-8">
-      <div className="rounded-3xl relative w-full h-[650px] border px-10 bg-violet-50 flex items-center justify-around">
+    <div className="px-8 ">
+      <div className="rounded-3xl  w-full h-[650px] border px-10 bg-violet-50 flex gap-10 items-center justify-around">
         <div className="absolute left-0 top-10">
           <ShakingIcon />
         </div>
@@ -23,15 +23,15 @@ const Main = () => {
         </div>
         <div className="flex flex-col gap-y-12">
           <p className="font-bold text-xl">Ahead App</p>
-          <h1 className="text-7xl font-bold">
+          <h1 className=" text-3xl md:text-5xl lg:text-7xl font-bold">
             Master your life <br /> by mastering <br /> emotions
           </h1>
-          <div className="flex gap-4">
-            <button className="text-white bg-black px-2 rounded-lg flex items-center ">
+          <div className="flex flex-col lg:flex-row gap-4 ">
+            <button className="text-white bg-black px-2 rounded-lg flex items-center max-w-[160px]">
               <Image src={Apple} alt="apple logo" width={40} height={40} />
               <div className="flex flex-col ">
-                <p className="text-sm text-slate-300">Download on the</p>
-                <h1 className="text-xl">App Store</h1>
+                <p className="text-sm text-slate-300 ">Download on </p>
+                <h1 className=" lg:text-xl">App Store</h1>
               </div>
             </button>
             <div className="flex flex-col">
@@ -40,11 +40,15 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <div className="relative  w-[300px]">
+        <div className=" ">
           <motion.div
             initial={{ rotate: 0 }}
             animate={{ rotate: 360 }}
-            transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+            transition={{
+              duration: 5,
+              //  repeat: Infinity,
+              ease: "linear",
+            }}
           >
             <Image src={ahead4} alt="ahead4" width={100} height={100} />
           </motion.div>
@@ -52,7 +56,11 @@ const Main = () => {
           <Image src={Phone} alt="phone" width={150} height={200} />
           <motion.div
             animate={{ rotate: 360 }}
-            transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+            transition={{
+              duration: 5,
+              // repeat: Infinity,
+              ease: "linear",
+            }}
           >
             <Image src={ahead1} alt="ahead1" width={100} height={100} />
           </motion.div>

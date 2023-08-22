@@ -19,7 +19,7 @@ const ShakingIcon = () => {
       transition: {
         duration: 5,
         ease: "linear",
-        repeat: Infinity,
+        // repeat: Infinity,
         repeatType: "reverse",
       },
     },
