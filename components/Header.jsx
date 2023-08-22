@@ -6,7 +6,7 @@ import logo from "@/images/logo.svg";
 
 const Header = () => {
   return (
-    <div className="w-full h-[120px] position-fixed ">
+    <div className="w-full h-[120px] bg-white z-10  fixed ">
       <div className="flex justify-between items-center pt-8 px-8 xl:px-16 gap-12">
         <Image src={logo} alt="Logo Icon" width={50} height={50} />
         <div>

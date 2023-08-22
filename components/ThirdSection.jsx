@@ -46,12 +46,12 @@ const ThirdSection = () => {
         </div>
       )}
       <div className="flex gap-4 overflow-hidden mt-14">
-        <Box showHidden={showHidden} color={"blue"} />
-        <Box showHidden={showHidden} color={"red"} />
-        <Box showHidden={showHidden} color={"green"} />
-        <Box showHidden={showHidden} color={"amber"} />
-        <Box showHidden={showHidden} color={"violet"} />
-        <Box showHidden={showHidden} color={"orange"} />
+        <Box showHidden={showHidden} color={"blue"} emoji={"😉"} />
+        <Box showHidden={showHidden} color={"red"} emoji={"😒"} />
+        <Box showHidden={showHidden} color={"green"} emoji={"😔"} />
+        <Box showHidden={showHidden} color={"amber"} emoji={" 🙄 "} />
+        <Box showHidden={showHidden} color={"violet"} emoji={"☹️"} />
+        <Box showHidden={showHidden} color={"orange"} emoji={"😃"} />
       </div>
     </div>
   );

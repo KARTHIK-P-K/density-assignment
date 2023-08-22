@@ -3,7 +3,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const Box = ({ showHidden, color }) => {
+const Box = ({ showHidden, color, emoji }) => {
   return (
     <AnimatePresence>
       <motion.div
@@ -16,7 +16,7 @@ const Box = ({ showHidden, color }) => {
           className={`min-w-[400px] h-[200px] p-4 bg-${color}-200 rounded-lg`}
         >
           <div>
-            <div>😠</div>
+            <div>{emoji}</div>
             <h1 className="text-md font-semibold mb-2">
               You Argue with a colleague
             </h1>
