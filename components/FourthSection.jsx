@@ -23,8 +23,8 @@ const FourthSection = () => {
     };
   }, []);
   return (
-    <div className="  p-8 mt-6 ">
-      <div className="bg-orange-50 h-full rounded-3xl border py-20 px-28 ">
+    <div className="  px-2 py-8 lg:p-8 mt-6 ">
+      <div className="bg-orange-50 h-full rounded-3xl border py-20 px-14 lg:px-28 ">
         <div id="target-section2"></div>
         <div>
           {isVisible && (
@@ -41,7 +41,7 @@ const FourthSection = () => {
           )}
         </div>
         <div className="mt-20 flex flex-col lg:flex-row justify-around gap-10">
-          <div className="border-8 max-w-[300px] border-white rounded-full p-8">
+          <div className="border-8 lg:max-w-[300px] border-white rounded-full p-8">
             <motion.div
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -58,12 +58,12 @@ const FourthSection = () => {
               transition={{ duration: 1 }}
             >
               <div className="max-w-[500px]">
-                <p className="text-xl">
+                <p className="text-sm lg:text-xl">
                   A personalised pocket coach that provides bite-sized , science
                   driven tools to boost emotional intelligence.
                 </p>
                 <br />
-                <p className="text-xl">
+                <p className="text-sm lg:text-xl">
                   Think of it as a pocket cheerleader towards a better, more
                   fulfilling
                 </p>
