@@ -2,13 +2,13 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/images/logo.svg";
+import ahead9 from "@/images/ahead9.png";
 
 const Header = () => {
   return (
     <div className="w-full h-[120px] bg-white z-10  fixed ">
       <div className="flex justify-between items-center pt-8 px-8 xl:px-16 gap-12">
-        <Image src={logo} alt="Logo Icon" width={50} height={50} />
+        <Image src={ahead9} alt="Logo Icon" width={70} height={70} />
         <div>
           <ul className="hidden md:flex items-center gap-2 md:gap-4 xl:gap-8 cursor-pointer">
             <li>Emotions</li>

@@ -14,7 +14,7 @@ import ahead4 from "@/images/ahead4.png";
 const Main = () => {
   return (
     <div className="p-8  ">
-      <div className="rounded-3xl  w-full h-[650px] border px-10 bg-violet-50 flex gap-10 items-center justify-around">
+      <div className="rounded-3xl mt-16 w-full h-[650px] border px-10 bg-violet-50 flex gap-10 items-center justify-around">
         <div className="absolute left-0 top-10">
           <ShakingIcon />
         </div>
