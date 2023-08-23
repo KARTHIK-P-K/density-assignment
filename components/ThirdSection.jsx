@@ -41,8 +41,13 @@ const ThirdSection = () => {
               Does this sound familiar...
             </motion.div>
           </h1>
-
-          <Image src={ahead3} alt="familar" width={50} height={50} />
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <Image src={ahead3} alt="familar" width={50} height={50} />
+          </motion.div>
         </div>
       )}
       <div className="flex gap-4 overflow-hidden mt-14">

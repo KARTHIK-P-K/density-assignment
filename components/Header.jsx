@@ -10,7 +10,7 @@ const Header = () => {
       <div className="flex justify-between items-center pt-8 px-8 xl:px-16 gap-12">
         <Image src={ahead9} alt="Logo Icon" width={70} height={70} />
         <div>
-          <ul className="hidden md:flex items-center gap-2 md:gap-4 xl:gap-8 cursor-pointer">
+          <ul className="hidden md:flex font-medium items-center gap-2 md:gap-4 xl:gap-8 cursor-pointer">
             <li>Emotions</li>
             <li>Manifest</li>
             <li>Self-awareness test</li>
@@ -19,7 +19,7 @@ const Header = () => {
         </div>
         <div>
           <button className="bg-black rounded-full  text-white px-2 md:px-4 xl:px-8 py-2 xl:py-4">
-            Download App
+            Download app
           </button>
         </div>
       </div>

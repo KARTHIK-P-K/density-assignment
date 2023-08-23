@@ -27,7 +27,7 @@ const Main = () => {
             Master your life <br /> by mastering <br /> emotions
           </h1>
           <div className="flex flex-col lg:flex-row gap-4 ">
-            <button className="text-white bg-black px-2 rounded-lg flex items-center max-w-[160px]">
+            <button className="text-white bg-black px-2 rounded-lg flex items-center max-w-[180px]">
               <Image src={Apple} alt="apple logo" width={40} height={40} />
               <div className="flex flex-col ">
                 <p className="text-sm text-slate-300 ">Download on </p>
@@ -46,7 +46,7 @@ const Main = () => {
             animate={{ rotate: 360 }}
             transition={{
               duration: 5,
-              //  repeat: Infinity,
+              repeat: Infinity,
               ease: "linear",
             }}
           >
@@ -58,7 +58,7 @@ const Main = () => {
             animate={{ rotate: 360 }}
             transition={{
               duration: 5,
-              // repeat: Infinity,
+              repeat: Infinity,
               ease: "linear",
             }}
           >

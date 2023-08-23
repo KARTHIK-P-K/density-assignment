@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import ahead7 from "@/images/ahead7.png";
 import { motion, AnimatePresence } from "framer-motion";
+import leaf from "@/images/leaf.png";
+import flower from "@/images/flower.png";
 
 const FourthSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,8 +26,41 @@ const FourthSection = () => {
   }, []);
   return (
     <div className="  px-2 py-8 lg:p-8 mt-6 ">
-      <div className="bg-orange-50 h-full rounded-3xl border py-20 px-14 lg:px-28 ">
+      <div className="bg-orange-50 h-full rounded-3xl border py-20 px-14 lg:px-28 relative ">
         <div id="target-section2"></div>
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{
+            repeat: Infinity,
+            duration: 5, // Time for one rotation
+            ease: "easeOut",
+          }}
+        >
+          <Image
+            className="absolute right-20 top-15"
+            src={leaf}
+            width={50}
+            height={50}
+            alt="leaf"
+          />
+        </motion.div>
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{
+            repeat: Infinity,
+            duration: 5, // Time for one rotation
+            ease: "easeOut",
+          }}
+        >
+          <Image
+            className="absolute left-20 top-70"
+            src={flower}
+            width={50}
+            height={50}
+            alt="leaf"
+          />
+        </motion.div>
+
         <div>
           {isVisible && (
             <motion.div
@@ -57,8 +92,8 @@ const FourthSection = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1 }}
             >
-              <div className="max-w-[500px]">
-                <p className="text-sm lg:text-xl">
+              <div className="max-w-[500px] text-slate-700">
+                <p className="text-sm  lg:text-xl">
                   A personalised pocket coach that provides bite-sized , science
                   driven tools to boost emotional intelligence.
                 </p>
