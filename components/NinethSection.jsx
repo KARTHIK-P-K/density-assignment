@@ -31,7 +31,7 @@ const NinethSection = () => {
     <div className="p-2 md:p-4 lg:p-8">
       <div id="target-section6"></div>
       <div className="bg-violet-50 rounded-3xl h-[1200px] lg:h-[800px] p-4 md:p-8 lg:p-16">
-        <div className="flex flex-col lg:flex-row lg:justify-between ">
+        <div className="flex flex-col items-center lg:flex-row lg:justify-between ">
           <AnimatePresence>
             {isVisible && (
               <motion.div
@@ -57,7 +57,7 @@ const NinethSection = () => {
             )}
           </AnimatePresence>
         </div>
-        <div className="flex flex-col lg:flex-row justify-between px-4 lg:px-10 xl:px-20">
+        <div className="flex flex-col items-center lg:items-start lg:flex-row justify-between px-4 lg:px-10 xl:px-20">
           <div className=" ">
             <div className="flex flex-col gap-y-4 bg-white w-[300px] xl:w-[600px] h-[250px] p-6 rounded-2xl mt-10">
               <Image src={ahead10} width={50} height={50} alt="ahead10" />

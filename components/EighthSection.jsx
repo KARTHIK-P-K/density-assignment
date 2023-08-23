@@ -27,7 +27,7 @@ const EighthSection = () => {
   return (
     <div className="my-40 p-8 ">
       <div id="target-section5"></div>
-      {isVisible && console.log("hi")}
+
       <div className="flex flex-col justify-center items-center gap-y-3  ">
         <p className="text-md">We take your privacy</p>
         <h1 className="font-bold text-3xl text-center">
