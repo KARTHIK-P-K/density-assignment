@@ -12,9 +12,7 @@ const Box = ({ showHidden, color, emoji }) => {
         exit={{ x: 0, opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div
-          className={`min-w-[400px] h-[200px] p-4 bg-${color}-200 rounded-lg`}
-        >
+        <div className={`min-w-[400px] h-[200px] p-4 ${color} rounded-lg`}>
           <div>
             <div>{emoji}</div>
             <h1 className="text-md font-semibold mb-2">
