@@ -7,6 +7,7 @@ import FourthSection from "@/components/FourthSection";
 import FifthSection from "@/components/FifthSection";
 import SixthSection from "@/components/SixthSection";
 import SeventhSection from "@/components/SeventhSection";
+import EighthSection from "@/components/EighthSection";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <FifthSection />
       <SixthSection />
       <SeventhSection />
+      <EighthSection />
     </div>
   );
 }

@@ -131,22 +131,62 @@ const SeventhSection = () => {
             <div className="absolute top-[-7px] z-10 left-96 w-4 h-4 rounded-full bg-amber-500"></div>
             <div className="absolute top-[-7px] z-10 right-0 w-4 h-4 rounded-full bg-green-500"></div>
           </div>
-
-          <div className="absolute left-10 p-1 top-10 rounded-lg bg-blue-900 w-14 h-10 flex items-center justify-center text-white">
-            You
-          </div>
-
-          <div className="absolute left-44 p-1 bottom-10 rounded-lg bg-blue-400 w-36 h-10 flex items-center justify-center text-white">
-            Anonymonos 1
-          </div>
-
-          <div className="absolute right-28 p-1 top-10 rounded-lg bg-amber-500 w-36 h-10 flex items-center justify-center text-white">
-            Anonymonos 2
-          </div>
-
-          <div className="absolute right-0 bottom-10 p-1 rounded-lg bg-green-500 w-36 h-10 flex items-center justify-center text-white">
-            Anonymonos 3
-          </div>
+          <AnimatePresence>
+            {isVisible && (
+              <motion.div
+                initial={{ opacity: 0, marginBottom: 0 }}
+                animate={{ opacity: 1, marginBottom: 0 }}
+                exit={{ opacity: 0, marginBottom: 0 }}
+                transition={{ duration: 2, ease: "easeOut" }}
+              >
+                <div className="absolute left-10 p-1 top-10 rounded-lg bg-blue-900 w-14 h-10 flex items-center justify-center text-white">
+                  You
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+          <AnimatePresence>
+            {isVisible && (
+              <motion.div
+                initial={{ opacity: 0, marginBottom: 0 }}
+                animate={{ opacity: 1, marginBottom: 0 }}
+                exit={{ opacity: 0, marginBottom: 0 }}
+                transition={{ duration: 2, ease: "easeOut" }}
+              >
+                <div className="absolute left-44 p-1 bottom-10 rounded-lg bg-blue-400 w-36 h-10 flex items-center justify-center text-white">
+                  Anonymonos 1
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+          <AnimatePresence>
+            {isVisible && (
+              <motion.div
+                initial={{ opacity: 0, marginBottom: 0 }}
+                animate={{ opacity: 1, marginBottom: 0 }}
+                exit={{ opacity: 0, marginBottom: 0 }}
+                transition={{ duration: 2, ease: "easeOut" }}
+              >
+                <div className="absolute right-28 p-1 top-10 rounded-lg bg-amber-500 w-36 h-10 flex items-center justify-center text-white">
+                  Anonymonos 2
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+          <AnimatePresence>
+            {isVisible && (
+              <motion.div
+                initial={{ opacity: 0, marginBottom: 0 }}
+                animate={{ opacity: 1, marginBottom: 0 }}
+                exit={{ opacity: 0, marginBottom: 0 }}
+                transition={{ duration: 2, ease: "easeOut" }}
+              >
+                <div className="absolute right-0 bottom-10 p-1 rounded-lg bg-green-500 w-36 h-10 flex items-center justify-center text-white">
+                  Anonymonos 3
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </div>
