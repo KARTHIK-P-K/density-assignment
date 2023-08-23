@@ -10,7 +10,7 @@ const Box = ({ showHidden, color, emoji }) => {
         initial={{ x: 0, opacity: 0 }}
         animate={{ x: showHidden ? -1000 : 0, opacity: showHidden ? 1 : 0 }}
         exit={{ x: 0, opacity: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 1 }}
       >
         <div className={`min-w-[400px] h-[200px] p-4 ${color} rounded-lg`}>
           <div>
